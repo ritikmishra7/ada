@@ -4,12 +4,9 @@ using namespace std;
 int MatrixChainOrder(int d[], int n)
 {
 	int m[n][n];
-
 	int i, j, k, L, q;
-
 	for (i = 1; i < n; i++)
 		m[i][i] = 0;
-
 	for (L = 2; L < n; L++)
 	{
 		for (i = 1; i < n - L + 1; i++)
